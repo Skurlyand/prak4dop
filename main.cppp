@@ -1,0 +1,18 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+#include "Header.h"
+const Matrixxx b;
+using namespace std;
+int main()
+{
+	Matrixxx h(1., 2., 3., 4., "hi");
+	Matrixxx c;
+	cout << (h + b).det() << endl;
+	c *= h;
+	h = c * b;
+	Matrix *i = &c;
+	i -> print();
+	system("pause");
+	return(0);
+}
